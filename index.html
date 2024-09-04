@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbal Garden</title>
+    <link rel="stylesheet" href="./styling.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="./Screenshot 2024-09-04 112111.png"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="form">
+        <div class="hi">
+            Welcome to our Herbal Garden 
+        </div>
+        <hr>
+        <div class="heading">
+            <p>Please Fill up your details to continue exploring:</p>
+        </div>
+        <form action="./description.html" method="GET">
+            <div class="input-box" id="name">
+                <input type="text" name="name" placeholder="Name" required>
+            </div>
+            <div class="input-box" id="phone">
+                <input type="tel" name="phone" maxlength="10" placeholder="Phone" required>
+            </div>
+            <div id="medicine">
+                <label for="mp">Medicinal Plant :</label>
+                <select name="mp" id="mp" required>
+                    <option value="" disabled selected>Select a medicinal plant</option>
+                    <option value="Ayurveda">Ayurveda</option>
+                    <option value="Yoga & Naturopathy">Yoga & Naturopathy</option>
+                    <option value="Unani">Unani</option>
+                    <option value="Siddha">Siddha</option>
+                    <option value="Homeopathy">Homeopathy</option>
+                </select>
+            </div>
+            <div class="button">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
